@@ -1,31 +1,25 @@
 import sys
 
-name = input("Enter your  First Name:")
-lname = input("Enter your Last Name")
+fname = input("Enter your  First Name:")
+lname = input("Enter your Last Name:")
 
 
 #if len(name) == 0:
-while(len(name) == 0):
-    for i in range (1,4):
-    #while(len(name) == 0):
-        print("Name cant be null")
-        name = input("Enter your name:")
-    sys.exit()
+while(len(fname) == 0):
+        print("First name cant be null!!")
+        fname = input("Enter your first name:")
 #elif len(name) < 4 or name.isalpha() != True:
-while(len(name) < 4 or name.isalpha() != True):
-        print("Please enter a valid name")
-        name = input("Enter your name:")
+while(len(fname) < 4 or fname.isalpha() != True):
+        print("Please enter a valid first name")
+        fname = input("Enter your first name:")
 
 while(len(lname) == 0):
-    for i in range (1,4):
-    #while(len(name) == 0):
-        print("Last Name cant be null")
-        name = input("Enter your Last Name:")
-    sys.exit()
+        print("Last Name cant be null!!")
+        lname = input("Enter your Last Name:")
 #elif len(name) < 4 or name.isalpha() != True:
 while(len(lname) < 2 or lname.isalpha() != True):
-        print("Please enter a valid last name")
-        name = input("Enter your Last Name:")
+        print("Please enter a valid last name:")
+        lname = input("Enter your Last Name:")
 
 age = input("Enter your age:")
 lim = 150
@@ -49,6 +43,6 @@ while((int(len(cnum)) != 10) or (cnum.isdigit() != True)):
     cnum = input("Enter your mobile number")
 
 print("*****************************")
-print("Name:",name,lname)
+print("Name:",fname,lname)
 print("Age:",age)
 print("Mobile number:",cnum)
